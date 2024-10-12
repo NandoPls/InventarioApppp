@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inventoryItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Código -->
+    <TextView
+        android:id="@+id/tvCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Código"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Descripción -->
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción" />
+
+    <!-- Stock -->
+    <TextView
+        android:id="@+id/tvStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock" />
+
+    <!-- Botones de editar y eliminar -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnEditItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btnDeleteItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>

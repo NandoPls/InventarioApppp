@@ -1,0 +1,72 @@
+<!-- list_item_admin_request.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adminRequestItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvRequestId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solicitud ID"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trabajador" />
+
+    <TextView
+        android:id="@+id/tvItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ítems" />
+
+    <!-- Botones -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnApprove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aprobar"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnReject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rechazar"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btnFinalize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Finalizar"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>

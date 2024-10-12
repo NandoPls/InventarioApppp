@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adminLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <!-- Barra superior -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#EEEEEE">
+
+        <!-- Mensaje de bienvenida -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+        <!-- Botón de cerrar sesión -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesión"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="16sp" />
+            />
+    </LinearLayout>
+
+    <!-- Contenido principal -->
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_below="@id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <!-- Botón Usuarios -->
+        <Button
+            android:id="@+id/btnManageUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuarios"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="16sp" />
+            />
+
+        <!-- Botón Autorizaciones -->
+
+        <Button
+            android:id="@+id/btnViewRequests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Autorizaciones"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnManageInventory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inventario"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

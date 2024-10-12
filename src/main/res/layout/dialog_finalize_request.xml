@@ -1,0 +1,17 @@
+<!-- dialog_finalize_request.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogFinalizeRequestLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/itemsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Los campos se agregarán dinámicamente desde el código -->
+
+    </LinearLayout>
+</ScrollView>

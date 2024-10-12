@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/makeRequestLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- RecyclerView para mostrar el inventario -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvInventory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Botón para enviar la solicitud -->
+    <Button
+        android:id="@+id/btnSendRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar Solicitud"
+        android:layout_margin="16dp" />
+</LinearLayout>

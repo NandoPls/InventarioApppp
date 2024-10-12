@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.inventary_app">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Inventaryapp"
+        tools:targetApi="s">
+        <activity
+            android:name=".MakeRequestAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".AdminRequestsAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".WorkerRequestsAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".WorkerRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MakeRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewInventoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InventoryRecyclerAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".InventoryManagementAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".ManageInventoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UsersAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".User"
+            android:exported="false" />
+        <activity
+            android:name=".ManageUsersActivity"
+            android:exported="false"
+            android:label="@string/title_activity_manage_users"
+            android:theme="@style/Theme.Inventaryapp" />
+        <activity
+            android:name=".RequestAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".RequestItem"
+            android:exported="false" />
+        <activity
+            android:name=".ListRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InventoryAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".InventoryItem"
+            android:exported="false" />
+        <activity
+            android:name=".ListInventoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrabajadorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false"
+            android:label="@string/title_activity_admin"
+            android:theme="@style/Theme.Inventaryapp" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

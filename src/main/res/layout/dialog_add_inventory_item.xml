@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogAddInventoryItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Código -->
+        <EditText
+            android:id="@+id/etCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Código"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Descripción -->
+        <EditText
+            android:id="@+id/etDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Código SAP -->
+        <EditText
+            android:id="@+id/etCodigoSAP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Código SAP"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Descripción SAP -->
+        <EditText
+            android:id="@+id/etDescripcionSAP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción SAP"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp" />
+
+        <!-- UM -->
+        <EditText
+            android:id="@+id/etUM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unidad de Medida (UM)"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Stock -->
+        <EditText
+            android:id="@+id/etStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Stock"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

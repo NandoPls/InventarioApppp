@@ -1,0 +1,64 @@
+<!-- list_item_inventory.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvCodigo"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvCodigoSAP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvDescripcionSAP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvUM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnRequestItem"
+        android:text="Solicitar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:textSize="16sp" />
+        />
+
+    <!-- SearchView para filtrar ítems -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewInventory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Buscar ítems" />
+
+    <!-- RecyclerView para mostrar la lista de inventario -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvInventory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

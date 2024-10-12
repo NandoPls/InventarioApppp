@@ -1,0 +1,88 @@
+<!-- activity_trabajador.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trabajadorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Barra superior -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#EEEEEE">
+
+        <!-- Mensaje de bienvenida -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+        <!-- Botón de cerrar sesión -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesión"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <!-- Contenido principal -->
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_below="@id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <!-- Botón Ver Inventario -->
+        <Button
+            android:id="@+id/btnViewInventory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Inventario"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="16sp"
+            />
+
+        <!-- Botón Solicitar Materiales -->
+        <Button
+            android:id="@+id/btnMakeRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solicitar Materiales"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="16sp"
+            />
+
+        <!-- Botón Ver Estado de Solicitudes -->
+        <Button
+            android:id="@+id/btnViewRequests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mis Solicitudes"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
